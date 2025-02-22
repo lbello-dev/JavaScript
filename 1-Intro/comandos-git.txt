@@ -71,3 +71,12 @@ git restore nombrearchivo.txt
 
 Ver cambios desde terminal.
 git diff
+
+Ver cambios o modificaciones desde la etapa de staged
+git diff --staged
+
+Ver log
+git log
+
+Ver log resumidos
+git log --oneline
