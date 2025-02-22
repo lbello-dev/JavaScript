@@ -48,4 +48,9 @@ git add .
 Ver estado de repositotio.
 git status
 
+Realizar Commit completo de todos los archivos con cambios.
+git commit -m "mensaje descriptivo"
+
+Realizar commit de un archivos
+git commit 
 
