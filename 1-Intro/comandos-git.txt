@@ -1,4 +1,5 @@
 FLUJO DE TRABAJO de git: 
+Video de tutotial https://www.youtube.com/watch?v=VdGzPZ31ts8&t=3639s
 [Computador] [Stage] [Commit] [Server]
       1         2        3       4
 -------------------------------------------------------------------------
