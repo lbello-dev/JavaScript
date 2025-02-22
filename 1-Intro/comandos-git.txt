@@ -72,11 +72,19 @@ git restore nombrearchivo.txt
 Ver cambios desde terminal.
 git diff
 
-Ver cambios o modificaciones desde la etapa de staged
+Ver cambios o modificaciones desde la etapa de staged.
 git diff --staged
 
-Ver log
+Ver log.
 git log
 
-Ver log resumidos
+Ver log resumidos.
 git log --oneline
+
+Ver rama de tranbajo .
+git branch
+
+Cambiar rama de trabajo.
+git checkout -b ramab
+
+Dragón carmesi.
