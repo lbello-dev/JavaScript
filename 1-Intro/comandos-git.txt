@@ -1,0 +1,70 @@
+FLUJO DE TRABAJO de git: 
+[Computador] [Stage] [Commit] [Server]
+      1         2        3       4
+-------------------------------------------------------------------------
+
+Lista de Comandos
+git config -h
+
+Versió Git
+git --version 
+
+Definir Nombre de usuario a nivel global.
+git config --global user.name "Leandro Bello" 
+
+Definir Email de usuario a nivel global.
+git config --global user.email leandrobelloucr@gmail.com
+
+Definir editor de texto a nivel global.
+git config --global core.editor "code--wait" 
+
+Ver configuraciones de git y lo muestra en el editor de texto que definimos.
+git config --global -e
+
+Configurar core crlf, nos permite mejorar la comparibilidad entre sistemas operativos
+al trabajar con git, dando la posibilidad de traducir o no registrar carácteres especiales como saltos de línea
+Windows:
+git config --global core.autocrlf true
+Mac y Linux:
+git config --global core.autocrlf input
+
+-------------------------------------------------------------------------
+
+ls      -> ver listado de directorios de alcanse.
+ls -a   ->ver directorios ocultos.
+pwd     ->ver directorio actual toda la ruta.
+cd namecarpeta --> avanzar a un directorio.
+cd ..   -> ir atrás.
+mkdir nombredirectorio --> crea carpeta y le damos nombredirectorio.
+rm -r nombredirectorio --> elimina carpeta y archivos.
+
+-------------------------------------------------------------------------
+Inicializar Git.
+git init
+
+Agregar archivos al Stage todos los archivos.
+git add .
+
+Ver estado de repositotio.
+git status
+
+Realizar Commit completo de todos los archivos con cambios.
+git commit -m "mensaje descriptivo"
+
+Realizar commit de un archivos
+git commit 
+
+Eliminar archivos
+rm nombrearchivo.txt 
+
+Eliminar Archivo y agregarlo al staged
+git rm nombrearchivo.txt
+
+Restaurar un archivo eliminado y agregado al staged
+git restore --staged nombrearchivo.txt
+
+Restaurar archivo para que sea físico en los directorios.
+git restore nombrearchivo.txt
+
+Renombrar Archivo
+mv nombreoriginal.txt nombrenuevo.txt
