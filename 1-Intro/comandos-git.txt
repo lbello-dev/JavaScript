@@ -87,4 +87,5 @@ git branch
 Cambiar rama de trabajo.
 git checkout -b ramab
 
-Dragón carmesi.
+Ver contenido de un archivo
+cat archivo.txt
