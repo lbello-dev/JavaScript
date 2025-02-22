@@ -68,3 +68,6 @@ git restore --staged nombrearchivo.txt
 
 Restaurar archivo para que sea físico en los directorios.
 git restore nombrearchivo.txt
+
+Ver cambios desde terminal.
+git diff
