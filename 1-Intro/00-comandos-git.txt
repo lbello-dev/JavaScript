@@ -54,3 +54,14 @@ git commit -m "mensaje descriptivo"
 Realizar commit de un archivos
 git commit 
 
+Eliminar archivos
+rm nombrearchivo.txt 
+
+Eliminar Archivo y agregarlo al staged
+git rm nombrearchivo.txt
+
+Restaurar un archivo eliminado y agregado al staged
+git restore --staged nombrearchivo.txt
+
+Restaurar archivo para que sea físico en los directorios.
+git restore nombrearchivo.txt
