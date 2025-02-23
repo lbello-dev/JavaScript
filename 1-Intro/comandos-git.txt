@@ -107,5 +107,8 @@ git remote add origin https://github.com/lbello-dev/PROYECTNAME.git
 git branch -M main
 git push -u origin main
 
-Agregar Push
+Agregar contindo al repositorio remoto con Push
 git push
+
+Traer cambios del repositorio remoto con git Pull
+git pull
