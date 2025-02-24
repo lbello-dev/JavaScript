@@ -29,6 +29,9 @@ git config --global core.autocrlf true
 Mac y Linux:
 git config --global core.autocrlf input
 
+COMPROBAR INFORMACION USER DE GIT REGISTRADO
+git config --get user.name
+git config --get user.email
 -------------------------------------------------------------------------
 
 ls      -> ver listado de directorios de alcanse.
