@@ -53,4 +53,6 @@ ssh-add c:\Users\YOU\.ssh\id_ed25519
 
 //Comentario agregado desde directorio de documentos\dev\javascript
 //Todo bien mi hermano desde el otro lado.
+//Muy bien por dicha, ya logramos hacer configuración de llaves con SSH. Qué alegría me da. Costó configurarlo, pero valio la pena.
+
 
