@@ -52,5 +52,5 @@ ssh-add c:\Users\YOU\.ssh\id_ed25519
 ####EJEMPLO REAL PARA COMPARAR ssh-add c:\Users\leand\.ssh\id_ed25519
 
 //Comentario agregado desde directorio de documentos\dev\javascript
-
+//Todo bien mi hermano desde el otro lado.
 
