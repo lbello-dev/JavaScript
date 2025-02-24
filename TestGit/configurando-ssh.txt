@@ -1,1 +1,53 @@
-Hola educito.
+Link de video tutorial: https://www.youtube.com/watch?v=AVg5IM9TvsU
+PASOS DE GUIA:
+
+1) Comprobar tus claves SSH existentes:
+ls -al ~/.ssh
+
+2) Generar una nueva clave SSH:
+ssh-keygen -t ed25519 -C "your_email@example.com"
+### ssh-keygen -t ed25519 -C "leandrobelloucr@gmail.com"
+
+2.1) Cuando se le pida, escriba una frase de contraseña segura: JonhConstantine13
+2.2) Clave generada:SHA256:WfdyRR4UMrS0W3GNGCeBJEctQVPifz2x9RA9BeUkOiE leandrobelloucr@gmail.com
+RESULTADO
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/leand/.ssh/id_ed25519):
+Enter passphrase for "/c/Users/leand/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/leand/.ssh/id_ed25519
+Your public key has been saved in /c/Users/leand/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:WfdyRR4UMrS0W3GNGCeBJEctQVPifz2x9RA9BeUkOiE leandrobelloucr@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|        .+E=BO*XX|
+|         +o++=*O*|
+|          o.+o.o*|
+|         o o oo+=|
+|        S   o.+oo|
+|             +  .|
+|                 |
+|                 |
+|                 |
++----[SHA256]-----+
+
+
+3) Agregar tu clave SSH al ssh-agent
+3.1)En una nueva ventana de PowerShell con privilegios elevados de administrador, asegúrate de que el agente ssh
+se esté ejecutando. Puedes usar las instrucciones de "Auto-lanzamiento ssh-agent" en Trabajar con contraseñas
+de clave SSH o iniciarla manualmente:
+# start the ssh-agent in the background
+Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+Start-Service ssh-agent
+
+3.2) Verificar que el agente SSH está en ejecución:
+Puedes verificar que el servicio esté en ejecución con este comando:
+Get-Service -Name ssh-agent
+
+3.2) En una ventana de terminal sin permisos elevados, agregue la clave privada SSH al agente ssh. Si has creado tu clave
+con otro nombre o si vas a agregar una clave existente que tiene otro nombre, reemplaza id_ed25519 en el comando
+por el nombre de tu archivo de clave privada.
+ssh-add c:\Users\YOU\.ssh\id_ed25519
+####EJEMPLO REAL PARA COMPARAR ssh-add c:\Users\leand\.ssh\id_ed25519
+
